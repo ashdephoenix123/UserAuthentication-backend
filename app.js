@@ -10,7 +10,7 @@ app.use(cookieParser()) //handles the cookies
 app.use(express.json())  // tells the server to serve the json responses in object form
 // app.use(cors())
 app.use(cors({
-    origin: ["http://localhost/5000"],
+    origin: ["http://localhost:3000"],
     credentials: true
 }))
 app.use(require('./router/auth'));
